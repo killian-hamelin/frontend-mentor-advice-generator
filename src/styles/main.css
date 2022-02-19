@@ -78,6 +78,10 @@ main {
     color: var(--dark-blue-op);
 }
 
+.advice__roll-button[disabled] svg {
+    animation: rotate .2s ease-in-out;
+}
+
 .advice__roll-button svg {
     width: 24px;
     height: 24px;
@@ -94,4 +98,13 @@ main {
 
 .attribution a {
     color: var(--neon-green);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(90deg);
+    }
 }
